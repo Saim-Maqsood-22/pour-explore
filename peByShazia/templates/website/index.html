@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}Pour & Explore | Home{% endblock %} 
+{% block content %}
+<section
+  class="w-screen h-[50dvh] flex items-center justify-center text-white text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl sm:w-screen md:w-screen lg:w-screen xl:w-screen 2xl:w-screen bg-gray-700 bg-blend-overlay"
+  id="Banner"
+>
+  <h1 class="font-extrabold">
+    Discover one-of-a-kind resin art, handmade with love by artist Shazia.
+  </h1>
+</section>
+<section class="w-screen">
+  <section
+  class="flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-center space-x-2"
+  >
+    <div
+      class="p-2 bg-cyan-500 rounded-2xl h-fit hover:bg-cyan-800 hover:text-white transition delay-150 duration-300 ease-in-out -translate-y-10"
+    >
+    <center>
+      <img src="{% static "Images/available.png" %}" alt="available icon"
+      class="w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] md:w-[60px]
+      md:h-[60px] lg:w-[80px] lg:h-[80px] xl:w-[100px] xl:h-[100px]
+      2xl:w-[120px] 2xl:h-[120px]">
+      </center>
+      <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center">Ready-to-buy products</p>
+    </div>
+    <div
+      class="p-2 bg-amber-500 rounded-2xl h-fit hover:bg-amber-800 hover:text-white transition delay-150 duration-300 ease-in-out -translate-y-10"
+    >
+    <center>
+      <img src="{% static "Images/paint-brush.png" %}" alt="available icon"
+      class="w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] md:w-[60px]
+      md:h-[60px] lg:w-[80px] lg:h-[80px] xl:w-[100px] xl:h-[100px]
+      2xl:w-[120px] 2xl:h-[120px]">
+    </center>
+      <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center">Customized products</p>
+        
+      </ul>
+    </div>
+    <div
+      class="p-2 bg-emerald-500 rounded-2xl h-full hover:bg-emerald-800 hover:text-white transition delay-150 duration-300 ease-in-out -translate-y-10"
+    >
+      <center>
+      <img src="{% static "Images/puzzle.png" %}" alt="available icon"
+      class="w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] md:w-[60px]
+      md:h-[60px] lg:w-[80px] lg:h-[80px] xl:w-[100px] xl:h-[100px]
+      2xl:w-[120px] 2xl:h-[120px]">
+      </center>
+      <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center">Educational Services</p>
+    </div>
+    <div
+      class="p-2 bg-fuchsia-500 rounded-2xl h-full hover:bg-fuchsia-800 hover:text-white transition delay-150 duration-300 ease-in-out -translate-y-10"
+    >
+      <center>
+      <img src="{% static "Images/iris.png" %}" alt="available icon"
+      class="w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] md:w-[60px]
+      md:h-[60px] lg:w-[80px] lg:h-[80px] xl:w-[100px] xl:h-[100px]
+      2xl:w-[120px] 2xl:h-[120px]">
+      </center>
+      <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center">Keepsake Art</p>
+    </div>
+    <div
+    class="p-2 bg-indigo-500 rounded-2xl h-full hover:bg-indigo-800 hover:text-white transition delay-150 duration-300 ease-in-out -translate-y-10"
+    >
+    <center>
+      <img src="{% static "Images/mural.png" %}" alt="available icon"
+      class="w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] md:w-[60px]
+      md:h-[60px] lg:w-[80px] lg:h-[80px] xl:w-[100px] xl:h-[100px]
+      2xl:w-[120px] 2xl:h-[120px]">
+      </center>
+    <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center">Geode Art</p>
+    </div>
+    <div
+      class="p-2 bg-fuchsia-500 rounded-2xl h-full hover:bg-fuchsia-800 hover:text-white transition delay-150 duration-300 ease-in-out -translate-y-10"
+    >
+      <center>
+      <img src="{% static "Images/art.png" %}" alt="available icon"
+      class="w-[20px] h-[20px] sm:w-[40px] sm:h-[40px] md:w-[60px]
+      md:h-[60px] lg:w-[80px] lg:h-[80px] xl:w-[100px] xl:h-[100px]
+      2xl:w-[120px] 2xl:h-[120px]">
+      </center>
+      <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center">Decoupage Art</p>
+    </div>
+  </section>
+</section>
+<section>
+  <h1 class="w-screen text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-fuchsia-500 text-center bg-fuchsia-200 font-extrabold">Why Choose Us</h1>
+  <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+    <p class="text-xs sm:text-sm md:text-lg lg:text-sm xl:text-lg">Experience the magic of art and emotion with Shazia's unique resin creations. Each piece is more than just a beautiful object; it's a testament to passionate craftsmanship, designed to bring a touch of elegance and personality to your life. Whether you're seeking a stunning one-of-a-kind artwork for your home, a thoughtful and personalized gift that captures a cherished memory, or an exclusive custom piece tailored to your vision, Shazia's dedication to quality ensures an unforgettable experience. Transform your space and your story with art that's not just seen, but felt.</p>
+    <img src="{% static "images/coaster.jpeg" %}" alt="" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px] md:w-[110px] md:h-[110px] lg:w-[140px] lg:h-[140px] xl:w-[150px] xl:h-[150px] 2xl:w-[150px] 2xl:h-[150px] ml-[50%] mt-[5%] transition delay-150 hover:scale-110">
+    </div>
+  </section>
+</section>
+{% endblock %}
