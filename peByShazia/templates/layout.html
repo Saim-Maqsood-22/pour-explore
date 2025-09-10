@@ -10,7 +10,13 @@
     {% tailwind_css %}
 </head>
 <body class="bg-[#FFFDD0] m-0 p-0 box-border">
-    {% comment %} Add Navbar (Responsive) {% endcomment %}
+    <nav class="w-full top-0 left-0 flex fixed">
+        <img src="{% static "Images/image.png" %}" alt="Logo Image" class="w-[100px] sm:w-[110px] md:w-[120px] lg:w-[130px] xl:w-[140px] 2xl:w-[150px] mr-auto">
+        <a href="{% url "home" %}" class="text-xs text-white bg-amber-900 sm:text-sm md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl mr-5">Home</a>
+        <a href="{% url "about" %}" class="text-xs text-white bg-amber-900 sm:text-sm md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl mr-5">About</a>
+        <a href="{% url "shop" %}" class="text-xs text-white bg-amber-900 sm:text-sm md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl mr-5">Shop</a>
+        <a href="{% url "contact" %}" class="text-xs text-white bg-amber-900 sm:text-sm md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl mr-5">Contact</a>
+    </nav>
     {% block content %}{% endblock %}
     <footer class="text-center text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
         &copy; 2025 All rights reserved
