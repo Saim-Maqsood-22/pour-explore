@@ -1,7 +1,22 @@
-{% extends "layout.html" %}
-{% block title %}Pour & Explore | About{% endblock %}
-{% block content %}
-<div>
-    <img src="" alt="">
+{% extends "layout.html" %} {% load static %} {% block title %}Pour & Explore |
+About{% endblock %} {% block content %}
+<div class="flex justify-center">
+  <img src="{% static "Images/image.png" %}" alt="Logo" class='mt-20 w-[100px]
+  h-[50px] sm:w-[110px] md:w-[120px] lg:w-[130px] xl:w-[140px] 2xl:w-[150px]'>
 </div>
+<section class="w-screen">
+  <h1 class="w-screen text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-fuchsia-500 text-center bg-fuchsia-200 font-extrabold">About the Artist</h1>
+  <p class='text-3xl'>
+    Welcome to a world where art is not just a creation, but a journey of
+    discovery and emotion. Each resin piece I craft is a reflection of my
+    passion for capturing the fleeting beauty of nature and the vibrant energy
+    of abstract thought. . From the mesmerizing swirls of color that mimic
+    distant galaxies to the delicate embedding of organic elements, my work is a
+    testament to the unpredictable magic of resin. I believe that art should be
+    an experience, a tactile and visual narrative that resonates with the soul.
+    Through every piece, I invite you to explore a universe of color, texture,
+    and light, finding a unique connection that transforms a simple object into
+    a personal treasure.
+  </p>
+</section>
 {% endblock %}

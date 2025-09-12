@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}Pour & Explore | Contact{% endblock %}
 {% block content %}
-<div class="flex mt-10">
+<div class="flex mt-20">
     <form method="POST" autocomplete="off">
         {% csrf_token %}
         {{form}}
         <center>
-        <button type="submit" class="text-center w-[25%] text-2xl bg-amber-200 cursor-pointer">Submit</button>
+        <button type="submit" class="text-center w-[25%] text-2xl bg-amber-200 cursor-pointer rounded-b-full">Submit</button>
         </center>
     </form>
 </div>

@@ -4,7 +4,6 @@ from django.db import models
 class products(models.Model):
     image=models.ImageField(upload_to='media')
     name=models.CharField(max_length=20)
-    description=models.CharField(max_length=50)
     price=models.PositiveIntegerField(null=False)
 
     class Meta:

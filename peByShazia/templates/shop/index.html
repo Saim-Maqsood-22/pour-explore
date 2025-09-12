@@ -1,17 +1,21 @@
 {% extends "layout.html" %}
-{% block title %}Pour & Explore | Store{% endblock %}
+{% block title %}Pour & Explore | Shop{% endblock %}
 {% block content %}
-{% for product in products %}
-<div class="p-4 bg-[#f5b0cb] w-1/3 mt-20     rounded-xl">
-    <center>
-    <img src="{{product.image.url}}" class="w-[30px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[90px] md:h-[90px] lg:w-[140px] lg:h-[140px] xl:w-[170px] xl:h-[170px] 2xl:w-[200px] 2xl:h-[200px]">
-    <h1>{{product.name}}</h1>
-    <h2>{{product.description}}</h2>
-    <h2>{{product.price}}</h2>
-    <button type="submit" class="bg-[#604b62] text-white w-full">
-        <a href="https://wa.me/971509664475">Order Now</a>
-    </button>
-    </center>
+<div class='w-full gap-4 mt-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3'>
+    {% for product in products %}
+    <div class='w-full gap-5'>
+        <div class='bg-fuchsia-300 p-2 rounded-lg w-full'>
+            <center>
+            <img src="{{product.image.url}}" alt="" class='w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] 2xl:w-[100px] 2xl:h-[100px]'>
+            <h1 class='text-black text-xs sm:text-sm md:text-xl xl:text-2xl 2xl:text-3xl'>{{product.name}}</h1>
+            <h1 class='text-black text-xs sm:text-sm md:text-xl xl:text-2xl 2xl:text-3xl'>{{product.description}}</h1>
+            <h1 class='text-black text-xs sm:text-sm md:text-xl xl:text-2xl 2xl:text-3xl'>AED {{product.price}}</h1>
+            <a href="https://wa.me/971509664475" target="_blank">
+                <button type='submit' href="htt" class='bg-blue-400 w-[50%] rounded-b-full cursor-pointer'>Order Now</button>
+            </a>
+        </div>
+        </center>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
 {% endblock %}
