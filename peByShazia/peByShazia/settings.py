@@ -25,7 +25,7 @@ SECRET_KEY = 'dc@q(xc9j#8q)yd!xds7m(=w-bwvv_#efn14q&k8*be!fcsyyt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["pour-explore.vercel.app"]
+ALLOWED_HOSTS = [".vercel.app", "127.0.0.1",".now.sh"]
 
 
 # Application definition
@@ -80,9 +80,13 @@ WSGI_APPLICATION = 'peByShazia.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "oNrbNrWGUjJJaacpasckAlPKpXeUOkTC",
+        "HOST": "interchange.proxy.rlwy.net",
+        "PORT": "53458",
     }
 }
 
@@ -123,6 +127,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT=os.path.join(BASE_DIR, "staticfiles_build", "static")
 MEDIA_URL="media/"
 MEDIA_ROOT= os.path.join(BASE_DIR, "media")
 # Default primary key field type
